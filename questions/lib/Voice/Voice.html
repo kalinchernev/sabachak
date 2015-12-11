@@ -1,0 +1,26 @@
+<template name="Voice">
+  <div class="listener" data-question-id="{{questionId}}">
+    <div class="listener__controls btn-group {{questionConrolsHide questionId}}" role="group">
+      <button type="button" class="listener__listen btn btn-default">
+        <span>Listen</span>
+        <span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="listener__stop btn btn-default">
+        <span>Stop</span>
+        <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="listener__check btn btn-default">
+        <span>Check</span>
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+      </button>
+      <button type="button" class="listener__retry btn btn-default">
+        <span>Retry</span>
+        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="form-group">
+      <textarea class="listener__feedback form-control" disabled="{{questionDisabled questionId}}">{{questionCorrectValue questionId}}</textarea>
+    </div>
+    <div class="listener__languages"></div>
+  </div>
+</template>

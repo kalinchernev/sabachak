@@ -1,0 +1,32 @@
+.listener {
+  position: relative;
+
+  &__controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__listen {
+  }
+
+  &__stop {
+  }
+
+  &__check {
+  }
+
+  &__retry {
+  }
+
+  &__feedback {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-align: left;
+    min-height: 100px;
+    padding: 5px
+  }
+
+  &__languages {
+  }
+};
